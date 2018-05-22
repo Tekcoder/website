@@ -1,0 +1,6 @@
+<footer>
+    <p>{{ range .Translations }}
+        <a href="{{ .Permalink }}">{{ .Language.LanguageName }} version</a>
+        {{ end }}
+    </p>
+</footer>

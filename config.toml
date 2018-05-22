@@ -1,0 +1,127 @@
+DefaultContentLanguage = "fr"
+title = "Baptiste Pesquet"
+
+[params]
+    profilePic = "profile.png"
+    author = "Baptiste Pesquet"
+    accent = "blue"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "solarized-dark"
+    highlightLanguages = ["javascript", "bash", "csharp", "python", "php"]
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode ="en-us"
+    baseURL = "https://bpesquet.com"
+    staticDir1 = ["static_content_en"]
+    weight = 2
+  [languages.fr]
+    languageName = "French"
+    languageCode= "fr"
+    baseURL = "https://bpesquet.fr"
+    staticDir1 = ["static_content_fr"]
+    weight = 1
+
+[languages.en.params]
+    description = "Engineer and computer science teacher"
+
+[languages.fr.params]
+    description = "Ingénieur et enseignant en informatique"
+
+[[menu.main]]
+    url = "/"
+    name = "Accueil"
+    weight = 1
+
+[[menu.main]]
+    url = "#"
+    name = "CV"
+    weight = 1
+
+[[menu.main]]
+    url = "/article/"
+    name = "Blog"
+    weight = 2
+
+[[menu.main]]
+    url = "/teaching/"
+    name = "Enseignements"
+    weight = 2
+
+[[menu.main]]
+    url = "/publication/"
+    name = "Publications"
+    weight = 2
+
+[[languages.en.menu.main]]
+    url    = "/"
+    name   = "Home"
+    weight = 1
+
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+    url = "mailto:bpesquet [at] gmail [dot] com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/bpesquet/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/bpesquet/"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.medium.com/@bpesquet/"
+    name = "medium"
+    weight = 4
+
+[[menu.icon]]
+    url = "http://www.pearltrees.com/bpesquet"
+    name = "bookmark"
+    weight = 5
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/bpesquet/"
+    name = "linkedin"
+    weight = 6
+
+[[languages.en.menu.icon]]
+    url = "mailto:bpesquet [at] gmail [dot] com"
+    name = "envelope-o"
+    weight = 1
+
+[[languages.en.menu.icon]]
+    url = "https://github.com/bpesquet/"
+    name = "github"
+    weight = 2
+
+[[languages.en.menu.icon]]
+    url = "https://twitter.com/bpesquet/"
+    name = "twitter"
+    weight = 3
+
+[[languages.en.menu.icon]]
+    url = "https://www.medium.com/@bpesquet/"
+    name = "medium"
+    weight = 4
+
+[[languages.en.menu.icon]]
+    url = "http://www.pearltrees.com/bpesquet"
+    name = "bookmark"
+    weight = 5
+
+[[related.indices]]
+    name = "course"       # The name of the indice, same as Front Matter's .Param key.
+    weight = 1            # We don't really need this, but omitting it would disable the indice.
+    includeNewer = true   # Here our relationship is timeless! This prevents Hugo from ignoring newer posts.

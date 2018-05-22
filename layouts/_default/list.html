@@ -1,0 +1,6 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    {{ range .Pages.GroupByDate "2006" "desc" }}
+    <h2>{{ .Key }}</h2>
+    {{ range .Pages }} {{ .Render "li" }} {{ end }} {{ end }}
+{{ end }}

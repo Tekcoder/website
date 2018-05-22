@@ -1,10 +1,11 @@
 DefaultContentLanguage = "fr"
 title = "Baptiste Pesquet"
+disqusShortname = "bpesquet"
 
 [params]
     profilePic = "profile.png"
     author = "Baptiste Pesquet"
-    accent = "blue"
+    accent = "red"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
@@ -15,15 +16,15 @@ title = "Baptiste Pesquet"
 [languages]
   [languages.en]
     languageName = "English"
-    languageCode ="en-us"
+    languageCode ="en-US"
     baseURL = "https://bpesquet.com"
-    staticDir1 = ["static_content_en"]
+    staticDir1 = ["static_en"]
     weight = 2
   [languages.fr]
     languageName = "French"
     languageCode= "fr"
     baseURL = "https://bpesquet.fr"
-    staticDir1 = ["static_content_fr"]
+    staticDir1 = ["static_fr"]
     weight = 1
 
 [languages.en.params]
@@ -48,7 +49,7 @@ title = "Baptiste Pesquet"
     weight = 2
 
 [[menu.main]]
-    url = "/teaching/"
+    url = "/course/"
     name = "Enseignements"
     weight = 2
 

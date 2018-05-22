@@ -3,12 +3,17 @@
 
     <p class="single-info">
         <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            Publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}. Dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}.
+            Dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}.
         </time>
         <br>
-        {{ i18n "readingTime" .ReadingTime }}.
-        <br>
     </p>
+
+    <!-- related publications -->
+    {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "publication" }} 
+    {{ with $related }}
+        <h3>{{ i18n "relatedPublications" }}</h3>
+        {{ range .ByPublishDate.Reverse }} {{ .Render "li" }} {{ end }} 
+    {{ end }}
 
     <p>
         <div class="text-justify">{{ .Content }}</div>

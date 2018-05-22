@@ -1,0 +1,9 @@
+[comments]
+other = "Commentaires"
+
+[readingTime]
+one = "Temps de lecture : une minute"
+other = "Temps de lecture : {{.Count}} minutes"
+
+[relatedPublications]
+other = "Publications associées"

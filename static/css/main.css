@@ -71,7 +71,7 @@ a:hover {
 /*list item for posts and projects*/
 
 .item {
-    padding: 10px 0;
+    padding: 2px 0;
 }
 
 .item-tag {
@@ -97,4 +97,8 @@ footer {
 
 img {
     max-width: 100%;
+}
+
+.single-info {
+    padding-bottom: 10px;
 }

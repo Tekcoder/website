@@ -4,7 +4,7 @@ disqusShortname = "bpesquet"
 enableGitInfo = true
 
 [params]
-    profilePic = "profile.png"
+    profilePic = "images/profile.png"
     author = "Baptiste Pesquet"
     accent = "red"
     showBorder = true
@@ -19,13 +19,11 @@ enableGitInfo = true
     languageName = "English"
     languageCode ="en-US"
     baseURL = "https://bpesquet.com"
-    staticDir1 = ["static_en"]
     weight = 2
   [languages.fr]
     languageName = "French"
     languageCode= "fr"
     baseURL = "https://bpesquet.fr"
-    staticDir1 = ["static_fr"]
     weight = 1
 
 [languages.en.params]
@@ -52,6 +50,11 @@ enableGitInfo = true
 [[menu.main]]
     url = "/course/"
     name = "Enseignements"
+    weight = 2
+
+[[menu.main]]
+    url = "/presentation/"
+    name = "Présentations"
     weight = 2
 
 [[menu.main]]

@@ -7,3 +7,6 @@ other = "Temps de lecture : {{.Count}} minutes"
 
 [relatedPublications]
 other = "Publications associées"
+
+[relatedArticles]
+other = "Articles associés"

@@ -1,9 +1,7 @@
-<div class="item">
-    {{ $.Scratch.Set "link" .RelPermalink }}
-    {{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
+{{ $.Scratch.Set "link" .RelPermalink }}
+{{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
 
-    {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }}
-    {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
+{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }}
+{{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
 
-    <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
-</div>
+<li><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></li>

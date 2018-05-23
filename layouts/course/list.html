@@ -1,6 +1,6 @@
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
     {{ range .Data.Pages.ByLastmod }}
-        {{ .Render "li" }} 
+        {{ .Render "summary" }} 
     {{ end }}
 {{ end }}

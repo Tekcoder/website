@@ -8,19 +8,33 @@
         <br>
     </p>
 
+    <div class="text-justify">
+
     <!-- related publications -->
     {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "publication" }} 
     {{ with $related }}
-        <h3>{{ i18n "relatedPublications" }}</h3>
+        <h2>{{ i18n "relatedPublications" }}</h2>
+        <ul>
         {{ range .ByPublishDate.Reverse }} {{ .Render "li" }} {{ end }} 
+        </ul>
+    {{ end }}
+
+    <!-- related articles -->
+    {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "article" }} 
+    {{ with $related }}
+        <h2>{{ i18n "relatedArticles" }}</h2>
+        <ul>
+        {{ range .ByDate.Reverse }} {{ .Render "li" }} {{ end }} 
+        </ul>
     {{ end }}
 
     <p>
-        <div class="text-justify">{{ .Content }}</div>
+        {{ .Content }}
     </p>
+    </div>
 
     {{ if and .Site.DisqusShortname (not .Params.disableComments) }}
-        <h3 class="page-header">{{ i18n "comments" }}</h3>
+        <h2 class="page-header">{{ i18n "comments" }}</h2>
         {{ template "_internal/disqus.html" . }}
     {{ end }}
 {{ end }}

@@ -3,12 +3,14 @@
 
     <p class="single-info">
         <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            Dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}.
+            Dernière mise à jour le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}.
         </time>
         <br>
     </p>
 
     <div class="text-justify">
+
+    <p>{{ .Content }}</p>
 
     <!-- related publications -->
     {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "publication" }} 
@@ -28,9 +30,7 @@
         </ul>
     {{ end }}
 
-    <p>
-        {{ .Content }}
-    </p>
+    
     </div>
 
     {{ if and .Site.DisqusShortname (not .Params.disableComments) }}

@@ -40,6 +40,6 @@ Chaque phase de jeu dure 10 minutes. L'idéal pour rythmer le jeu et instiller u
 
 On laisse ensuite quelques minutes à chaque équipe pour trouver en auto-organisation des axes d'amélioration avant la prochaine phase. Les participants peuvent décider de changer de rôle d'une phase à l'autre.
 
-Au bout de trois phases de jeu, on constate l'adoption de principes agiles (travail en boucle courte, augmentation de la fréquence des échanges, travail incrémental avec priorisation, etc) ainsi qu'une nette amélioration de la qualité des productions. La séance se termine par un debriefing global qui est le bon moment pour faire apparaître les liens avec les principes de l'agilité.
+Au bout de trois phases de jeu, on constate l'adoption de principes agiles (travail en boucle courte, augmentation de la fréquence des échanges, travail incrémental avec priorisation, etc) ainsi qu'une nette amélioration de la qualité des productions. La séance se termine par un debriefing global qui est le bon moment pour formaliser les liens avec les principes de l'agilité.
 
 Vous trouverez plus de détails sur ce jeu dans [cet article](http://www.agilex.fr/2013/01/mon-jeu-agile-prefere/).

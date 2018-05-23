@@ -5,3 +5,10 @@ draft: true
 course: gestproj
 school: "ENSC"
 ---
+
+## Ressources complémentaires
+
+* [The test pyramid](https://martinfowler.com/bliki/TestPyramid.html)
+* [Software testing anti-patterns](http://blog.codepipes.com/testing/software-testing-antipatterns.html)
+
+{{< youtube IhKL1WYqIdY >}}

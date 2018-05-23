@@ -5,7 +5,7 @@ draft: false
 course: ["gestproj"]
 ---
 
-Dans le cadre du module de cours Gestion de projet, j'ai testé avec succès un atelier ludique et efficace pour s'initier aux valeurs de l'agilité : le jeu **artistes et spécifieurs**. Imaginé par [Alistair Cockburn](http://alistair.cockburn.us/), l'un des signataires du [manifeste agile](http://agilemanifesto.org/), ce jeu est souvent utilisé par les coachs agiles en entreprise.
+Dans le cadre du module de cours [Gestion de projet]({{< relref "gestion-projet.md" >}}), j'ai testé avec succès un atelier ludique et efficace pour s'initier aux valeurs de l'agilité : le jeu **artistes et spécifieurs**. Imaginé par [Alistair Cockburn](http://alistair.cockburn.us/), l'un des signataires du [manifeste agile](http://agilemanifesto.org/), ce jeu est souvent utilisé par les coachs agiles en entreprise.
 
 Par rapport à d'autres ateliers similiaires comme [lego4scrum](https://www.lego4scrum.com/), il a l'avantage de ne nécessiter presque aucun matériel. En 1h30 environ, il offre une première approche de certains principes agiles dans un cadre propice à la bonne humeur.
 
@@ -40,6 +40,6 @@ Chaque phase de jeu dure 10 minutes. L'idéal pour rythmer le jeu et instiller u
 
 On laisse ensuite quelques minutes à chaque équipe pour trouver en auto-organisation des axes d'amélioration avant la prochaine phase. Les participants peuvent décider de changer de rôle d'une phase à l'autre.
 
-Au bout de trois phases de jeu, on constate l'adoption de principes agiles (travail en boucle courte, intensité de la communication en hausse, meilleure compréhension au sein de l'équipe, etc) ainsi qu'une nette amélioration de la qualité des productions.
+Au bout de trois phases de jeu, on constate l'adoption de principes agiles (travail en boucle courte, augmentation de la fréquence des échanges, travail incrémental avec priorisation, etc) ainsi qu'une nette amélioration de la qualité des productions. La séance se termine par un debriefing global qui est le bon moment pour faire apparaître les liens avec les principes de l'agilité.
 
-Vous trouverez plus de détails sur ce jeu et ses liens avec l'agilité dans [cet article](http://www.agilex.fr/2013/01/mon-jeu-agile-prefere/).
+Vous trouverez plus de détails sur ce jeu dans [cet article](http://www.agilex.fr/2013/01/mon-jeu-agile-prefere/).

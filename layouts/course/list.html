@@ -1,6 +1,6 @@
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
-    {{ range .Data.Pages.ByLastmod }}
-        {{ .Render "summary" }} 
-    {{ end }}
+    {{ range .Data.Pages.GroupByParam "school" }}
+    <h2>{{ .Key }}</h2>
+    {{ range .Pages.ByLastmod }} {{ .Render "summary" }} {{ end }} {{ end }}
 {{ end }}

@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Introduction au développement mobile avec React Native - Baptiste Pesquet</title>
+
+	<link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="../../reveal.js/css/theme/white.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../reveal.js/css/print/pdf.css' : '../../reveal.js/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Introduction au développement mobile avec React Native</h2>
+				<p>
+					<a href="https://ensc.bordeaux-inp.fr">Ecole Nationale Supérieure de Cognitique</a>
+				</p>
+				<p>
+					<a href="http://bpesquet.com">Baptiste Pesquet</a>
+				</p>
+			</section>
+			<section>
+				<h3>Sommaire</h3>
+				<ul>
+					<li>L'écosystème mobile</li>
+					<li>Le JavaScript moderne</li>
+					<li>Premiers pas avec React Native</li>
+				</ul>
+			</section>
+			<section>
+				<h2>L'écosystème mobile</h2>
+			</section>
+			<section>
+				<section>
+					<img data-src="images/20160822_android_ios.png" />
+				</section>
+				<section>
+					<img data-src="images/mobile_os_fragmentation_2016.jpg" />
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Développement natif</h3>
+					<p>Création d'applications en utilisant la technologie prévue par le concepteur de l'OS.</p>
+					<ul>
+						<li class="fragment">Android : Java</li>
+						<li class="fragment">iOS : Objective-C ou Swift</li>
+					</ul>
+					<p class="fragment">Ces technologies sont
+						<strong>incompatibles</strong>.
+					</p>
+				</section>
+				<section>
+					<h3>Avantages</h3>
+					<ul>
+						<li>Accès à l'intégralité des fonctionnalités matérielles et logicielles du terminal mobile.</li>
+						<li>Performances optimales.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Inconvénient</h3>
+					<p>Nécessité de créer puis de faire évoluer une application pour chaque environnement.
+					</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Solutions hybrides</h3>
+					<p>Création d'applications mobiles compatibles avec plusieurs OS mobiles grâce à un framework dédié.</p>
+					<p class="fragment">Une application hybride est une application web qui s'exécute à l'intérieur d'un navigateur.
+					</p>
+					<p class="fragment">Exemples :
+						<a href="https://cordova.apache.org/">Apache Cordova</a>,
+						<a href="https://ionicframework.com/">Ionic</a>
+					</p>
+				</section>
+				<section>
+					<h3>Avantages</h3>
+					<ul>
+						<li>Fonctionnalités et performances proches de celles d'une application native.</li>
+						<li>Economies de ressources pour créer l'application.</li>
+						<li>Une seule base de code : maintenance et évolution facilitées.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Inconvénients</h3>
+					<ul>
+						<li>Impossible d'accéder à certaines fonctionnalités matérielles ou logicielles spécifiques.</li>
+						<li>Look'n'feel d'une application web.</li>
+						<li>Mauvaises performances dans certains scenarii.</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Développement natif multi-plateformes</h3>
+					<p>Création d'applications mobiles compatibles avec plusieurs OS mobiles grâce à un framework dédié.</p>
+					<p class="fragment">Le framework encapsule les véritables composants natifs de l'OS.</p>
+					<p class="fragment">Exemples :
+						<a href="https://facebook.github.io/react-native/">React Native</a>,
+						<a href="https://weex.apache.org/">Weex</a>,
+						<a href="https://www.xamarin.com/platform">Xamarin</a>
+					</p>
+				</section>
+				<section>
+					<h3>Le meilleur des deux mondes ?</h3>
+					<p>Combine les avantages du natif (look'n'feel, performances) et de l'hybride (une seule base de code).</p>
+					<p>Limite potentielle : le support de l'OS dépend entièrement du framework.</p>
+				</section>
+			</section>
+			<section>
+				<h2>Le JavaScript moderne</h2>
+			</section>
+			<section>
+				<h3>Un pré-requis essentiel</h3>
+				<p>La grande majorité des solutions mobiles multi-plateformes sont basées sur JavaScript.</p>
+				<img data-src="images/mobile_logos.png" />
+			</section>
+			<section>
+				<section>
+					<h3>Les évolutions du langage</h3>
+					<p>JavaScript est normalisé sous le nom
+						<strong>ECMAScript</strong>.</p>
+					<img data-src="images/js_history.png" />
+					<p>La Norme
+						<strong>ES2015</strong> (ES6) a apporté de très nombreuses améliorations au langage.</p>
+				</section>
+				<section>
+					<h3>Let et const</h3>
+					<p>Les mots-clés
+						<strong>let</strong> et
+						<strong>const </strong> remplacent
+						<strong>var</strong> pour la déclaration des variables.</p>
+					<p>La valeur d'une variable déclarée avec
+						<strong>const</strong> ne peut plus être modifiée.</p>
+					<pre><code data-trim>
+let a = 3.14;
+a = 6.28; // OK
+
+const b = 3.14;
+b = 6.28; // Erreur!
+					</code></pre>
+				</section>
+				<section>
+					<h3>Litéraux de modèle</h3>
+					<p>Chaînes de caractères créées entre
+						<em>backticks</em> `...` et permettant d'intégrer des expressions.</p>
+					<pre><code data-trim>
+const country = "France";
+console.log(`I live in ${country}`); // "I live in France"
+					</code></pre>
+				</section>
+				<section>
+					<h3>Fonctions fléchées</h3>
+					<p>Nouvelle syntaxe pour créer des fonctions anonymes.</p>
+					<pre><code data-trim>
+// Syntaxe classique
+const hello = function(name) {
+  const message = `Hello, ${name}!`;
+  return message;
+};
+
+// Utilisation d'une fonction fléchée
+const hello = (name) => {
+  const message = `Hello, ${name}!`;
+  return message;
+};
+
+console.log(hello("Richard")); // "Bonjour, Richard!"
+					</code></pre>
+				</section>
+				<section>
+					<h3>Classes</h3>
+					<pre><code data-trim>
+class Character {
+  constructor(name, health, strength) {
+    this.name = name;
+    this.health = health;
+    this.strength = strength;
+  }
+  describe() {
+    return `${this.name} has ${this.health} health points 
+      and ${this.strength} as strength`;
+  }
+}
+
+const aurora = new Character("Aurora", 150, 25);
+console.log(aurora.describe());
+					</code></pre>
+				</section>
+				<section>
+					<h3>Appels asynchrones</h3>
+					<p>Une
+						<strong>promesse</strong> ou
+						<em>promise</em> est un objet qui encapsule une opération dont le résultat n'est pas encore connu.</p>
+					<pre><code data-trim>
+// Envoie une requête HTTP asynchrone vers l'URL spécifiée
+fetch(url)
+  .then(() => {
+    // Code appelé ultérieurement si la requête réussit
+  })
+  .catch(() => {
+    // Code appelé ultérieurement si la requête échoue
+  });
+					</code></pre>
+				</section>
+				<section>
+					<h3>Consommation d'API web</h3>
+					<pre><code data-trim>
+// Envoi d'une requête HTTP asynchrone vers l'URL spécifiée
+// La réponse est reçue sous forme de données JSON
+fetch("http://my-api-url")
+  .then(response => response.json()) // JSON vers JavaScript
+  .then(content => {
+    // Utilisation de la réponse
+    // ...
+  })
+  .catch(err => {
+    console.error(err.message);
+  });
+					</code></pre>
+				</section>
+				<section>
+					<h3>Modules et imports</h3>
+					<p>JavaScript supporte la notion de
+						<strong>module</strong> pour factoriser des éléments réutilisables.</p>
+					<pre><code data-trim>
+// Importe l'élément exporté par défaut par le module
+import React from 'react-native';
+
+// Importe d'autres éléments exportés grâce à leur nom
+import {View, Text, Image} from 'react-native';
+
+// Importe à la fois l'élément par défaut et d'autres éléments
+import React, {View, Text, Image} from 'react-native';
+					</code></pre>
+				</section>
+				<section>
+					<h3>Ressources</h3>
+					<ul>
+						<li>
+							<a href="https://github.com/bpesquet/thejsway">https://github.com/bpesquet/thejsway</a>
+						</li>
+						<li>
+							<a href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a>
+						</li>
+						<li>
+							<a href="http://javascript.info/">http://javascript.info</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h3>Les outils</h3>
+				<ul>
+					<li>
+						Gestion des dépendances :
+						<a href="https://www.npmjs.com">npm</a> ou
+						<a href="https://yarnpkg.com">yarn</a>.
+					</li>
+					<li>Edition du code :
+						<a href="https://code.visualstudio.com">Visual Studio Code</a>.
+					</li>
+					<li>Formatage du code :
+						<a href="https://github.com/prettier/prettier">Prettier</a>.
+					</li>
+					<li>Analyse du code :
+						<a href="https://eslint.org">ESLint</a>.
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Premiers pas avec React Native</h2>
+			</section>
+			<section>
+				<h3>React Native</h3>
+				<p>Framework créé par Facebook,
+					<a href="https://github.com/facebook/react-native">open source</a> depuis 2015.</p>
+				<p>Déclinaison mobile du framework JavaScript
+					<a href="https://reactjs.org">React</a>.</p>
+				<img data-src="images/reactjs.png" />
+			</section>
+			<section>
+				<section>
+					<h3>Création d'une application</h3>
+					<p>Utilisation de l'outil
+						<a href="https://github.com/react-community/create-react-native-app">Create React Native App</a> associé à l'application mobile
+						<a href="https://expo.io/">Expo</a>.</p>
+					<pre><code data-trim>
+# Avec npm
+npm install -g create-react-native-app
+create-react-native-app MyApp
+cd MyApp
+npm start
+					</code></pre>
+					<pre><code data-trim>
+# Avec yarn (https://yarnpkg.com/blog/2017/05/12/introducing-yarn/)
+yarn create react-native-app MyApp
+cd MyApp
+yarn start
+					</code></pre>
+				</section>
+				<section>
+					<h3>Structure de l'application</h3>
+					<img src="images/rn_app_structure.png" />
+				</section>
+				<section>
+					<h3>Fichier principal : App.js</h3>
+					<pre><code data-trim>
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Hello World!</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>La notion de composant</h3>
+					<p>Les
+						<strong>composants</strong> sont les blocs de base d'une application React (Native).</p>
+					<p>Ils permettent de créer une UI sous forme
+						<strong>déclarative</strong> par assemblage de composants.</p>
+				</section>
+				<section>
+					<h3>Propriétés d'un composant</h3>
+					<p>Caractéristiques définies au moment de sa création et immuables ensuite (immutables).</p>
+					<pre><code data-trim>
+class Greeting extends Component {
+  render() {
+    return (
+      <Text>Hello {this.props.name}!</Text>
+    );
+  }
+}
+
+export default class LotsOfGreetings extends Component {
+  render() {
+    return (
+      <View style={{alignItems: 'center'}}>
+        <Greeting name='John' />
+        <Greeting name='Paul' />
+        <Greeting name='Jones' />
+      </View>
+    );
+  }
+}
+					</code></pre>
+				</section>
+				<section>
+					<h3>Etat d'un composant</h3>
+					<p>Etat interne (données) d'un composant, susceptible de changer au cours du temps (mutable).</p>
+					<pre><code data-trim>
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {count: 0};
+    setInterval(() => {
+      this.setState({count: this.state.count + 1})
+    }, 1000);
+  }
+    
+  render() {
+    const {count} = this.state;
+    const {color, size} = this.props;
+
+    return (
+      <Text style={{color, fontSize: size}}>
+        {count}
+      </Text>
+    )
+  }
+}
+
+export default class CounterApp extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Counter color={'red'} size={30} />
+      </View>
+    );
+  }
+}
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<h3>Exemple d'application</h3>
+				<a href="https://github.com/ensc-mobi/RandomBeer">https://github.com/ensc-mobi/RandomBeer</a>
+				<img src="images/random_beer.png" />
+			</section>
+			<section>
+				<h3>Ressources</h3>
+				<ul>
+					<li>
+						<a href="https://facebook.github.io/react-native/docs/getting-started.html">https://facebook.github.io/react-native/docs/getting-started.html</a>
+					</li>
+					<li>
+						<a href="http://www.reactnativeexpress.com">http://www.reactnativeexpress.com</a>
+					</li>
+					<li>
+						<a href="http://putaindecode.io/fr/articles/js/react/native/introduction/">http://putaindecode.io/fr/articles/js/react/native/introduction/</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<div>
+		<a href="https://ensc.bordeaux-inp.fr">
+			<img src="images/ENSC.jpg" style="position: absolute;
+						bottom: 10px;
+						left: 10px;" />
+		</a>
+	</div>
+
+	<script src="../../reveal.js/lib/js/head.min.js"></script>
+	<script src="../../reveal.js/js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// Display the page number of the current slide
+			slideNumber: true,
+			// Display the page number of the current slide
+			transition: "convex",
+			dependencies: [
+				{ src: '../../reveal.js/plugin/markdown/marked.js' },
+				{ src: '../../reveal.js/plugin/markdown/markdown.js' },
+				{ src: '../../reveal.js/plugin/notes/notes.js', async: true },
+				{ src: '../../reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>

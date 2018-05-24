@@ -6,7 +6,7 @@ enableGitInfo = true
 [params]
     profilePic = "images/profile.png"
     author = "Baptiste Pesquet"
-    accent = "red"
+    # accent = "red" # Using default blueish color
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!

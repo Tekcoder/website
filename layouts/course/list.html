@@ -1,6 +1,15 @@
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
-    {{ range .Data.Pages.GroupByParam "school" }}
-    <h2>{{ .Key }}</h2>
-    {{ range .Pages.ByLastmod }} {{ .Render "summary" }} {{ end }} {{ end }}
+
+    <!-- I no subsection, show pages list-->
+    {{ if eq (len .Sections) 0 }}
+        {{ range .Pages.ByLastmod }} {{ .Render "summary" }} {{ end }}
+    {{ else }}
+        <!-- Iterate on subsections -->
+        {{ range .Sections }}
+            <h2>{{ .Title }}</h2>
+            {{ range .Pages.ByLastmod }} {{ .Render "summary" }} {{ end }}
+        {{ end }}
+    {{ end }}
+
 {{ end }}

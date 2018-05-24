@@ -24,6 +24,7 @@ enableGitInfo = true
     languageName = "French"
     languageCode= "fr"
     baseURL = "https://bpesquet.fr"
+    staticDir1 = ["static_fr"]
     weight = 1
 
 [languages.en.params]

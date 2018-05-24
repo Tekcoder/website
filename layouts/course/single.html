@@ -10,8 +10,6 @@
 
     <div class="text-justify">
 
-    <p>{{ .Content }}</p>
-
     <!-- related publications -->
     {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "publication" }} 
     {{ with $related }}
@@ -30,6 +28,7 @@
         </ul>
     {{ end }}
 
+    <p>{{ .Content }}</p>
     
     </div>
 

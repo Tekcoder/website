@@ -1,6 +1,6 @@
 ---
 title: "Artistes et spécifieurs, un jeu pour découvrir l'agilité"
-date: 2018-05-22T15:57:43+02:00
+date: 2018-05-24T15:57:43+02:00
 draft: false
 course: ["gestproj"]
 ---

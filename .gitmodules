@@ -1,3 +1,9 @@
 [submodule "static/reveal.js"]
 	path = static/reveal.js
 	url = https://github.com/hakimel/reveal.js.git
+[submodule "public/fr"]
+	path = public/fr
+	url = https://github.com/bpesquet/bpesquet.fr.git
+[submodule "public/en"]
+	path = public/en
+	url = https://github.com/bpesquet/bpesquet.com.git

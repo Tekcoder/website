@@ -17,11 +17,15 @@ repo: https://github.com/ensc-mobi/RandomBeer
 
 ---
 
+{{% section %}}
+
 ![Smartphone platform market share](images/smartphone_market_share_2016.jpg)
 
-----
+---
 
 ![Mobile OS Fragmentation](images/mobile_os_fragmentation_2016.jpg)
+
+{{% /section %}}
 
 ---
 
@@ -29,26 +33,6 @@ repo: https://github.com/ensc-mobi/RandomBeer
 
 Création d'applications en utilisant la technologie prévue par le concepteur de l'OS.
 
-{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} Android : Java {{% /fragment %}}
+{{% fragment-list %}}Android ; IOS{{% /fragment-list %}}
 
----
-
-Bla
-
-{{< frag c="* One" >}}
-{{< frag c="* Two" >}}
-{{< frag c="* Three" >}}
-
----
-
-Bli
-
-{{< markdown >}}
-- Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
-- Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
-{{< /markdown >}}
-
----
-
-{{% fragment_list %}}Android ; IOS{{% /fragment_list %}}
+{{% fragment %}}Ces technologies sont **incompatibles**.{{% /fragment %}}

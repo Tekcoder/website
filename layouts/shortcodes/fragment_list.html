@@ -1,0 +1,5 @@
+<ul>
+{{- range (split .Inner " ; ") -}}
+    <li class="fragment">{{ . | safeHTML }}</li>
+{{- end -}}
+</ul>

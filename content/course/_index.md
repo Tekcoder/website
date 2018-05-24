@@ -1,3 +1,3 @@
 ---
-title: "Enseignements"
+title: "Modules de cours"
 ---

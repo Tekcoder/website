@@ -6,7 +6,7 @@ course: gestproj
 school: "ENSC"
 ---
 
-## Ressources complémentaires
+## Compléments
 
 * [The test pyramid](https://martinfowler.com/bliki/TestPyramid.html)
 * [Software testing anti-patterns](http://blog.codepipes.com/testing/software-testing-antipatterns.html)

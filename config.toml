@@ -48,19 +48,27 @@ enableGitInfo = true
     weight = 2
 
 [[menu.main]]
+    identifier = "teaching"
+    name = "Enseignement"
+    weight = 3
+
+[[menu.main]]
     url = "/course/"
-    name = "Enseignements"
-    weight = 2
+    name = "Modules de cours"
+    parent = "teaching"
+    weight = 1
 
 [[menu.main]]
     url = "/presentation/"
     name = "Présentations"
+    parent = "teaching"
     weight = 2
 
 [[menu.main]]
     url = "/publication/"
     name = "Publications"
-    weight = 2
+    parent = "teaching"
+    weight = 3
 
 [[languages.en.menu.main]]
     url    = "/"

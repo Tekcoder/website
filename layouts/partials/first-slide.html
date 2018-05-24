@@ -1,7 +1,11 @@
-## {{ .Title }}
+<section>
+<h2>{{ .Title }}</h2>
 
-[Ecole Nationale Supérieure de Cognitique](https://ensc.bordeaux-inp.fr)
+<p><a href="https://ensc.bordeaux-inp.fr">Ecole Nationale Supérieure de Cognitique</a></p>
 
-[Baptiste Pesquet]({{ .Site.BaseURL }})
+<p><a href="{{ .Site.BaseURL }}">Baptiste Pesquet</a></p>
 
-{{ with .Params.repo }}[![GitHub logo]({{ "images/GitHub-Mark-64px.png" | absURL }})]({{ . }}){{ end }}
+{{ with .Params.repo }}
+    <a href="{{ . }}"><img src="{{ "images/GitHub-Mark-64px.png" | absURL }}" alt="GitHub logo"></a>
+{{ end }}
+</section>

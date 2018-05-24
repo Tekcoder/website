@@ -18,12 +18,12 @@ enableGitInfo = true
   [languages.en]
     languageName = "English"
     languageCode ="en-US"
-    baseURL = "https://bpesquet.com"
+    baseURL = "http://www.bpesquet.com"
     weight = 2
   [languages.fr]
     languageName = "French"
     languageCode= "fr"
-    baseURL = "https://bpesquet.fr"
+    baseURL = "http://www.bpesquet.fr"
     staticDir1 = ["static_fr"]
     weight = 1
 

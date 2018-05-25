@@ -11,7 +11,7 @@ Par rapport à d'autres ateliers similiaires comme [lego4scrum](https://www.lego
 
 ## Principe du jeu
 
-Pour commencer, on forme des équipes de 4 à 6 personnes selon le nombre total de participants à l'atelier. Chaque équipe se scinde en deux sous-groupes : les spécifieurs d'une part et les artistes de l'autre.
+Pour commencer, on forme des équipes de 4 à 6 personnes selon le nombre total de participants à l'atelier. Chaque équipe se scinde en deux : les spécifieurs d'une part et les artistes de l'autre.
 
 L'objectif est pour les artistes de reproduire aussi fidèlement que possible un dessin à partir des spécifications fournies par les spécifieurs de l'équipe.
 
@@ -22,7 +22,7 @@ Les contraintes sont les suivantes :
 * Les spécifieurs ne peuvent pas dessiner.
 * Les artistes ne peuvent pas se déplacer.
 
-Le reste de l'organisation spécifieurs/artistes est libre : nombre d'allers-retours, format de communication, attente d'un spécifieur aux côtés des artistes, etc.
+Le reste de l'organisation spécifieurs/artistes est libre : nombre d'allers-retours, format de communication écrite, attente d'un spécifieur aux côtés des artistes, etc.
 
 ## Matériel nécessaire
 
@@ -30,16 +30,26 @@ Le reste de l'organisation spécifieurs/artistes est libre : nombre d'allers-ret
 * Des feuilles A3 ou A4 vierges et des marqueurs pour dessiner dessus.
 * Des feuilles de brouillon pour écrire les spécifications.
 
-Ce jeu peut être gourmand en papier. Je donne à mes étudiants des consignes d'économie pour éviterle gaspillage.
+Ce jeu peut être gourmand en papier. Je donne à mes étudiants des consignes d'économie pour éviter le gaspillage.
 
 ## Déroulement
 
-Une fois les consignes de jeu données à tous les participants, on sépare physiquement les spécifieurs et les artistes. L'idéal est de les placer dans deux salles limitrophes. La partie peut commencer !
+Une fois les consignes de jeu données à tous les participants, on sépare physiquement le groupe des spécifieurs et celui des artistes. Il est possible de les placer dans deux salles limitrophes, ou de les éloigner au maximum dans une même salle. La partie peut commencer !
 
-Chaque phase de jeu dure 10 minutes. L'idéal pour rythmer le jeu et instiller une petite dose de stress est de vidéoprojeter un [compte à rebours](https://www.online-stopwatch.com/full-screen-stopwatch/) aux spécifieurs. Une fois le temps écoulé, tous les participants sont regroupés pour un debriefing collectif (souvent très drôle) sur les dessins produits par chaque équipe.
+Chaque phase de jeu dure 10 minutes. L'idéal pour rythmer la session et instiller une petite dose de stress est de vidéoprojeter un [compte à rebours](https://www.online-stopwatch.com/full-screen-stopwatch/) aux spécifieurs. Une fois le temps écoulé, on récupère les dessins de chaque équipe et tous les participants sont regroupés pour un debriefing collectif souvent très drôle.
 
-On laisse ensuite quelques minutes à chaque équipe pour trouver en auto-organisation des axes d'amélioration avant la prochaine phase. Les participants peuvent décider de changer de rôle d'une phase à l'autre.
+On laisse ensuite quelques minutes à chaque équipe pour trouver des axes d'amélioration avant la prochaine phase. Les participants peuvent décider de changer de rôle d'une phase à l'autre.
 
-Au bout de trois phases de jeu, on constate l'adoption de principes agiles (travail en boucle courte, augmentation de la fréquence des échanges, travail incrémental avec priorisation, etc) ainsi qu'une nette amélioration de la qualité des productions. La séance se termine par un debriefing global qui est le bon moment pour formaliser les liens avec les principes de l'agilité.
+Au bout de trois phases de jeu, on observe l'adoption naturelle de plusieurs des grands principes agiles :
+
+* Fonctionnement en boucle courte.
+* Echanges réguliers entre les parties prenantes.
+* Travail incrémental avec priorisation.
+* Amélioration par auto-organisation.
+* ...
+
+ Dès la seconde phase, on constate également une nette amélioration de la qualité des productions.
+
+ La séance se termine par un debriefing global qui est le bon moment pour formaliser les liens avec les principes de l'agilité.
 
 Vous trouverez plus de détails sur ce jeu dans [cet article](http://www.agilex.fr/2013/01/mon-jeu-agile-prefere/).

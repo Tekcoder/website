@@ -4,14 +4,14 @@
     {{ if eq (len .Sections) 0 }}
         <h1>{{ .Parent.Title }}</h1>
         <h2>{{ .Title }}</h2>
-        {{ range .Pages.ByLastmod }} {{ .Render "summary" }} {{ end }}
+        {{ range .Pages.ByLastmod.Reverse }} {{ .Render "summary" }} {{ end }}
     {{ else }}
         <h1>{{ .Title }}</h1>
 
         <!-- Iterate on subsections -->
         {{ range .Sections }}
             <h2>{{ .Title }}</h2>
-            {{ range .Pages.ByLastmod }} {{ .Render "summary" }} {{ end }}
+            {{ range .Pages.ByLastmod.Reverse }} {{ .Render "summary" }} {{ end }}
         {{ end }}
     {{ end }}
 

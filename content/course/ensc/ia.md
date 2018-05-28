@@ -11,15 +11,19 @@ course: ia
 
 * [AI for humanity](https://www.aiforhumanity.fr/). Le rapport de Cédric Villani et la stratégie française en matière d'IA.
 
+* [A 'Brief' History of Neural Nets and Deep Learning](http://www.andreykurenkov.com/writing/ai/a-brief-history-of-neural-nets-and-deep-learning/). Une série de quatre articles expliquant les origines du Deep Learning.
+
 ## Cours en ligne et MOOC
 
-* [Cours d'initiation au Machine Learning](https://developers.google.com/machine-learning/crash-course/). Cours interne de Google rendu public en 2018. Décrit très bien les fondamentaux. Disponible en français et en anglais. Utilise TensorFlow.
+* [Initiation au Machine Learning](https://developers.google.com/machine-learning/crash-course/). Cours interne de Google rendu public en 2018. Décrit très bien les fondamentaux. Disponible en français et en anglais. Utilise TensorFlow.
 
 * [Coursera : Machine Learning](https://www.coursera.org/learn/machine-learning). Une référence depuis plusieurs années. Enseigné par Andrew Ng. Utilise Matlab/Octave.
 
 * [Practical Deep Learning For Coders](http://course.fast.ai/). Une approche pragmatique et "top-down" : partir d'applications concrètes pour aller vers les concepts théoriques. Utilise une librairie basée sur PyTorch.
 
-* [Coursera : Deep Learning Specialization](https://www.deeplearning.ai/). Une série de 5 cours enseignés par Andrew Ng. Utilise Python et TensorFlow.
+* [Coursera : Deep Learning Specialization](https://www.deeplearning.ai/). Une série de cinq cours enseignés par Andrew Ng. Utilise Python et TensorFlow.
+
+* [EPFL Deep Learning Course](https://documents.epfl.ch/users/f/fl/fleuret/www/dlc/). Un cours très complet de l'Ecole Polytechnique Fédérale de Lausanne. Utilise PyTorch.
 
 ## Livres
 
@@ -39,7 +43,10 @@ course: ia
 
 * Une série de vidéos très pédagogiques sur les réseaux de neurones et le Deep Learning. {{< youtubelist PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi >}}
 
-## Compléments
+## Autres ressources
 
-* [Introduction to A*](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
-* [Pearltrees sur l'IA](https://www.pearltrees.com/bpesquet/ai/id15654228)
+* [Introduction to A*](https://www.redblobgames.com/pathfinding/a-star/introduction.html). Une explication graphique du fonctionnement des algorithmes Dijkstra et A* de recherche dans un graphe.
+
+* [A Neural Network Playground](http://playground.tensorflow.org). Jouez avec un réseau de neurones dans votre navigateur.
+
+* Mes [favoris sur l'IA](https://www.pearltrees.com/bpesquet/ai/id15654228), triés par catégorie et enrichis régulièrement.

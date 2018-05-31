@@ -1,15 +1,25 @@
 <!-- highlight.js -->
 {{ if .Site.Params.highlight | default false }}
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
     {{ range .Site.Params.highlightLanguages }} <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script> {{ end }}
 
     <script>hljs.initHighlightingOnLoad();</script>
-
 {{ end }}
 
-<!-- custom -->
+<!-- Google Analytics -->
+{{ if .Site.GoogleAnalytics }}
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', '{{ .Site.GoogleAnalytics }}');
+        </script>
+{{ end }}
+
+<!-- custom JS -->
 {{ range .Site.Params.js }} <script src="{{ . | absURL }}"></script> {{ end }}
 
 <!-- jquery -->

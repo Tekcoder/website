@@ -2,6 +2,7 @@ DefaultContentLanguage = "fr"
 title = "Baptiste Pesquet"
 disqusShortname = "bpesquet"
 enableGitInfo = true
+googleAnalytics = "UA-39897312-4"
 
 [params]
     profilePic = "images/profile.png"

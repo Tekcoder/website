@@ -1,24 +1,17 @@
 {{ define "main" }}
-     
+    
     <h1>{{ .Title }}</h1>
-
-    <!-- Iterate on sections -->
+    <!-- show pages list, if any -->
+    {{ range .Pages }} {{ .Render "summary" }} {{ end }}
     {{ range .Sections }}
-        <!-- No subsection, show pages list-->
-        {{ if eq (len .Sections) 0 }}
-            <h2>{{ .Title }}</h2>
+        <h2>{{ .Title }}</h2>
+        <!-- show pages list, if any -->
+        {{ range .Pages }} {{ .Render "summary" }} {{ end }}
+        <!-- Iterate on sections -->
+        {{ range .Sections }}
+            <h3>{{ .Title }}</h3>
             {{ range .Pages }} {{ .Render "summary" }} {{ end }}
-        {{ else }}
-            <h2>{{ .Title }}</h2>
-            <!-- show pages list, if any -->
-            {{ range .Pages }} {{ .Render "summary" }} {{ end }}
-            <!-- Iterate on subsections -->
-            {{ range .Sections }}
-                <h3>{{ .Title }}</h3>
-                {{ range .Pages }} {{ .Render "summary" }} {{ end }}
-            {{ end }}
         {{ end }}
     {{ end }}
-
 
 {{ end }}

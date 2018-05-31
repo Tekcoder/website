@@ -40,6 +40,8 @@ Chaque phase de jeu dure 10 minutes. L'idéal pour rythmer la session et instill
 
 On laisse ensuite quelques minutes à chaque équipe pour trouver des axes d'amélioration avant la prochaine phase. Les participants peuvent décider de changer de rôle d'une phase à l'autre.
 
+## Conclusion
+
 Au bout de trois phases de jeu, on observe l'adoption naturelle de plusieurs des grands principes agiles :
 
 * Fonctionnement en boucle courte.

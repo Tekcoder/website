@@ -12,6 +12,15 @@
 
     <div class="text-justify">
 
+    <!-- related presentations -->
+    {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "presentation" }} 
+    {{ with $related }}
+        <h2>{{ i18n "relatedPresentations" }}</h2>
+        <ul>
+        {{ range .ByPublishDate.Reverse }} {{ .Render "li" }} {{ end }} 
+        </ul>
+    {{ end }}
+
     <!-- related publications -->
     {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "publication" }} 
     {{ with $related }}

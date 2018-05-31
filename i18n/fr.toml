@@ -5,6 +5,9 @@ other = "Commentaires"
 one = "Temps de lecture : une minute"
 other = "Temps de lecture : {{.Count}} minutes"
 
+[relatedPresentations]
+other = "Présentations associées"
+
 [relatedPublications]
 other = "Publications associées"
 

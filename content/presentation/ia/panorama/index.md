@@ -59,10 +59,6 @@ TODO
 
 ---
 
-![Deep Learning meme](images/deep_learning_meme_keras.png)
-
----
-
 ![AI, ML, DL](images/ai_ml_dl.png)
 
 ---

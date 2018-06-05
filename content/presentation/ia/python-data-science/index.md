@@ -9,11 +9,11 @@ course: ["ia"]
 ### Sommaire
 
 * Introduction à Python
+* Partage de code avec Jupyter Notebook
 * Calcul mathématique avec NumPy
 * Analyse de données avec Pandas
 * Création de graphiques avec Matplotlib et Seaborn
 * Installation simplifiée avec Anaconda
-* Partage de code avec Jupyter Notebook
 
 ---
 

@@ -19,12 +19,12 @@ googleAnalytics = "UA-39897312-4"
   [languages.en]
     languageName = "English"
     languageCode ="en-US"
-    baseURL = "http://www.bpesquet.com"
+    baseURL = "https://www.bpesquet.com"
     weight = 2
   [languages.fr]
     languageName = "French"
     languageCode= "fr"
-    baseURL = "http://www.bpesquet.fr"
+    baseURL = "https://www.bpesquet.fr"
     staticDir1 = ["static_fr"]
     weight = 1
 

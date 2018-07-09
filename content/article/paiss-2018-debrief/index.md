@@ -8,7 +8,7 @@ La session 2018 de l'école d'été de l'INRIA consacrée à l'IA, nommée [PAIS
 
 ![Logo PAISS](https://project.inria.fr/paiss/files/2018/04/te%CC%82tie%CC%80re-3.jpg)
 
-Le P de PAISS correspond à l'institut [PRAIRIE](https://inria.fr/actualite/actualites-inria/creation-de-l-institut-prairie), le centre français d'excellence en IA dont la création a été annoncée lors du sommet [AI for Humanity](https://www.aiforhumanity.fr/) de mars 2018.
+Le P de PAISS correspond à l'institut [PRAIRIE](https://inria.fr/actualite/actualites-inria/creation-de-l-institut-prairie), le centre français d'excellence en IA dont la création a été annoncée lors du sommet [AI for Humanity](https://www.aiforhumanity.fr/) en mars 2018.
 
 ## Quelques chiffres
 
@@ -30,7 +30,7 @@ L'agenda de l'école d'été fut très dense, avec au total 15 conférences et 3
 
 Le casting des intervenants a rassemblé de nombreuses pointures de la recherche en IA, dont une véritable *dream team* francophone composée de Yann LeCun (patron de l'IA chez Facebook), Rémi Munos (responsable du laboratoire DeepMind à Paris), Hugo Larochelle (Google Brain) et bien d'autres.
 
-{{% figure src="images/paiss_selfie.jpg" caption="Je m'étais pourtant promis de ne pas faire de selfie avec Yann LeCun..." %}}
+{{% figure src="images/paiss_selfie.jpg" caption="Je sais, on avait dit pas de selfie avec Yann LeCun..." %}}
 
 Les sujets présentés correspondent aux grands axes actuels de la recherche en IA : apprentissages semi-supervisé et non supervisé, apprentissage profond par renforcement, meta-learning (apprendre à apprendre), etc. Les principaux thèmes d'application étaient la vision par ordinateur, le traitement du langage naturel (NLP), et dans une moindre mesure la robotique.
 
@@ -45,7 +45,7 @@ Voici quelques liens pour accéder au contenu présenté :
 
 ## Bilan personnel
 
-Cette école d'été m'a permis de mesurer l'écart entre mes connaissances actuelles et l'état de l'art. J'ai bien l'intention de continuer à travailler pour réduire cet écart, même si mes objectifs en matière d'IA sont avant tout d'ordre pédagogique.
+Cette école d'été m'a permis de mesurer l'écart entre mes connaissances actuelles et l'état de l'art. J'ai bien l'intention de continuer à travailler pour réduire cet écart, même si mes objectifs en matière d'IA sont avant tout d'ordre pédagogique (pour le moment).
 
 La recherche en IA semble plutôt une affaire de mathématiciens que d'informaticiens. Toutes les présentations se sont basées sur un formalisme mathématique important, avec dans certains cas la mobilisation de concepts qui m'ont ramené tout droit à mes lointaines années de prépa.
 

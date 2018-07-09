@@ -98,3 +98,7 @@ img {
 .single-info {
     padding-bottom: 10px;
 }
+
+figure {
+    text-align: center;
+}

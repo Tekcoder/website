@@ -5,15 +5,15 @@ draft: false
 repo: https://github.com/ensc-mobi/RandomBeer
 ---
 
-### Sommaire
+## Sommaire
 
-* L'écosystème mobile
-* Le JavaScript moderne
-* Premiers pas avec React Native
+- L'écosystème mobile
+- Le JavaScript moderne
+- Premiers pas avec React Native
 
 ---
 
-### L'écosystème mobile
+## L'écosystème mobile
 
 ---
 
@@ -31,25 +31,25 @@ repo: https://github.com/ensc-mobi/RandomBeer
 
 {{% section %}}
 
-### Développement natif
+## Développement natif
 
 Création d'applications en utilisant la technologie prévue par le concepteur de l'OS.
 
-* Android : Java
-* IOS : Objective-C ou Swift
+- Android : Java
+- IOS : Objective-C ou Swift
 
 {{% fragment %}}Ces technologies sont **incompatibles**.{{% /fragment %}}
 
 ---
 
-### Avantages
+## Avantages
 
-* Accès à l'intégralité des fonctionnalités matérielles et logicielles du terminal mobile.
-* Performances optimales.
+- Accès à l'intégralité des fonctionnalités matérielles et logicielles du terminal mobile.
+- Performances optimales.
 
 ---
 
-### Inconvénient (majeur !)
+## Inconvénient (majeur !)
 
 Nécessité de créer puis de faire évoluer une application pour chaque environnement.
 
@@ -59,7 +59,7 @@ Nécessité de créer puis de faire évoluer une application pour chaque environ
 
 {{% section %}}
 
-### Solutions hybrides
+## Solutions hybrides
 
 Création d'applications mobiles compatibles avec plusieurs OS mobiles grâce à un framework dédié.
 
@@ -69,19 +69,19 @@ Exemples : [Apache Cordova](https://cordova.apache.org), [Ionic](https://ionicfr
 
 ---
 
-### Avantages
+## Avantages
 
-* Fonctionnalités et performances proches de celles d'une application native.
-* Economies de ressources pour créer l'application.
-* Une seule base de code : maintenance et évolution facilitées.
+- Fonctionnalités et performances proches de celles d'une application native.
+- Economies de ressources pour créer l'application.
+- Une seule base de code : maintenance et évolution facilitées.
 
 ---
 
-### Inconvénients
+## Inconvénients
 
-* Impossible d'accéder à certaines fonctionnalités matérielles ou logicielles spécifiques.
-* *Look'n'feel* non natif.
-* Mauvaises performances dans certains scenarii.
+- Impossible d'accéder à certaines fonctionnalités matérielles ou logicielles spécifiques.
+- _Look'n'feel_ non natif.
+- Mauvaises performances dans certains scenarii.
 
 {{% /section %}}
 
@@ -89,7 +89,7 @@ Exemples : [Apache Cordova](https://cordova.apache.org), [Ionic](https://ionicfr
 
 {{% section %}}
 
-### Développement natif multi-plateformes
+## Développement natif multi-plateformes
 
 Création d'applications mobiles compatibles avec plusieurs OS mobiles grâce à un framework dédié.
 
@@ -99,9 +99,9 @@ Exemples : [React Native](https://facebook.github.io/react-native/), [Weex](http
 
 ---
 
-### Le meilleur des deux mondes ?
+## Le meilleur des deux mondes ?
 
-Combine les avantages du natif (*look'n'feel*, performances) et de l'hybride (une seule base de code).
+Combine les avantages du natif (_look'n'feel_, performances) et de l'hybride (une seule base de code).
 
 Limite potentielle : le support de l'OS dépend entièrement du framework.
 
@@ -109,11 +109,11 @@ Limite potentielle : le support de l'OS dépend entièrement du framework.
 
 ---
 
-### Le JavaScript moderne
+## Le JavaScript moderne
 
 ---
 
-### Un pré-requis essentiel
+## Un pré-requis essentiel
 
 La majorité des solutions mobiles multi-plateformes est basée sur JavaScript.
 
@@ -123,7 +123,7 @@ La majorité des solutions mobiles multi-plateformes est basée sur JavaScript.
 
 {{% section %}}
 
-### Les évolutions du langage
+## Les évolutions du langage
 
 JavaScript est normalisé sous le nom **ECMAScript**.
 
@@ -133,7 +133,7 @@ La norme **ES2015** (ou ES6) a apporté de très nombreuses améliorations au la
 
 ---
 
-### Let et const
+## Let et const
 
 Les mots-clés `let` et `const` remplacent avantageusement `var` pour la déclaration des variables.
 
@@ -149,9 +149,9 @@ b = 6.28; // Erreur!
 
 ---
 
-### Litéraux de modèle
+## Litéraux de modèle
 
-Chaînes de caractères créées entre *backticks* \`...\` et permettant d'intégrer des expressions.
+Chaînes de caractères créées entre _backticks_ \`...\` et permettant d'intégrer des expressions.
 
 ```js
 const country = "France";
@@ -160,7 +160,7 @@ console.log(`I live in ${country}`); // "I live in France"
 
 ---
 
-### Fonctions fléchées
+## Fonctions fléchées
 
 Nouvelle syntaxe pour créer des fonctions anonymes.
 
@@ -172,7 +172,7 @@ const hello = function(name) {
 };
 
 // Utilisation d'une fonction fléchée
-const hello = (name) => {
+const hello = name => {
   const message = `Hello, ${name}!`;
   return message;
 };
@@ -182,7 +182,7 @@ console.log(hello("Richard")); // "Bonjour, Richard!"
 
 ---
 
-### Classes
+## Classes
 
 ```js
 class Character {
@@ -203,9 +203,9 @@ console.log(aurora.describe());
 
 ---
 
-### Appels asynchrones
+## Appels asynchrones
 
-Une **promesse** (*promise*) est un objet qui encapsule une opération dont le résultat n'est pas encore connu.
+Une **promesse** (_promise_) est un objet qui encapsule une opération dont le résultat n'est pas encore connu.
 
 ```js
 // Envoie une requête HTTP asynchrone vers l'URL spécifiée
@@ -220,7 +220,7 @@ fetch(url)
 
 ---
 
-### Consommation d'API web
+## Consommation d'API web
 
 ```js
 // Envoi d'une requête HTTP asynchrone vers l'URL spécifiée
@@ -238,39 +238,39 @@ fetch("http://my-api-url")
 
 ---
 
-### Modules et imports
+## Modules et imports
 
 JavaScript supporte la notion de **module** pour factoriser des éléments réutilisables.
 
 ```js
 // Importe l'élément exporté par défaut par le module
-import React from 'react-native';
+import React from "react-native";
 
 // Importe d'autres éléments exportés grâce à leur nom
-import {View, Text, Image} from 'react-native';
+import { View, Text, Image } from "react-native";
 
 // Importe à la fois l'élément par défaut et d'autres éléments
-import React, {View, Text, Image} from 'react-native';
+import React, { View, Text, Image } from "react-native";
 ```
 
 {{% /section %}}
 
 ---
 
-### Les outils
+## Les outils
 
-* Gestion des dépendances : [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/lang/en/).
-* Edition du code : [Visual Studio Code](https://code.visualstudio.com/).
-* Formatage du code : [Prettier](https://github.com/prettier/prettier).
-* Analyse du code : [ESLint](https://eslint.org/).
-
----
-
-### Premiers pas avec React Native
+- Gestion des dépendances : [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/lang/en/).
+- Edition du code : [Visual Studio Code](https://code.visualstudio.com/).
+- Formatage du code : [Prettier](https://github.com/prettier/prettier).
+- Analyse du code : [ESLint](https://eslint.org/).
 
 ---
 
-### React Native
+## Premiers pas avec React Native
+
+---
+
+## React Native
 
 Framework créé par Facebook, open source depuis 2015.
 
@@ -282,7 +282,7 @@ Déclinaison mobile du framework JavaScript [React](https://reactjs.org/).
 
 {{% section %}}
 
-### Création d'une application
+## Création d'une application
 
 Utilisation de l'outil [Create React Native App](https://github.com/react-community/create-react-native-app) associé à l'application mobile [Expo](https://expo.io) pour le déploiement.
 
@@ -303,17 +303,17 @@ yarn start
 
 ---
 
-### Contenu du répertoire créé
+## Contenu du répertoire créé
 
 ![Arborescence React Native](images/rn_app_structure.png)
 
 ---
 
-### Le fichier principal App.js
+## Le fichier principal App.js
 
 ```jsx
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 export default class App extends React.Component {
   render() {
@@ -328,10 +328,10 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });
 ```
 
@@ -341,7 +341,7 @@ const styles = StyleSheet.create({
 
 {{% section %}}
 
-### La notion de composant
+## La notion de composant
 
 Les **composants** sont les blocs de base d'une application React (Native).
 
@@ -349,26 +349,24 @@ Ils permettent de créer une UI sous forme **déclarative** par assemblage de co
 
 ---
 
-### Propriétés d'un composant
+## Propriétés d'un composant
 
 Caractéristiques définies au moment de sa création et immuables ensuite (immutables).
 
 ```jsx
 class Greeting extends Component {
   render() {
-    return (
-      <Text>Hello {this.props.name}!</Text>
-    );
+    return <Text>Hello {this.props.name}!</Text>;
   }
 }
 
 export default class LotsOfGreetings extends Component {
   render() {
     return (
-      <View style={{alignItems: 'center'}}>
-        <Greeting name='John' />
-        <Greeting name='Paul' />
-        <Greeting name='Jones' />
+      <View style={{ alignItems: "center" }}>
+        <Greeting name="John" />
+        <Greeting name="Paul" />
+        <Greeting name="Jones" />
       </View>
     );
   }
@@ -377,7 +375,7 @@ export default class LotsOfGreetings extends Component {
 
 ---
 
-### Etat d'un composant
+## Etat d'un composant
 
 Etat interne (données) d'un composant, susceptible de changer au cours du temps (mutable).
 
@@ -385,21 +383,17 @@ Etat interne (données) d'un composant, susceptible de changer au cours du temps
 class Counter extends Component {
   constructor(props) {
     super(props);
-    this.state = {count: 0};
+    this.state = { count: 0 };
     setInterval(() => {
-      this.setState({count: this.state.count + 1})
+      this.setState({ count: this.state.count + 1 });
     }, 1000);
   }
 
   render() {
-    const {count} = this.state;
-    const {color, size} = this.props;
+    const { count } = this.state;
+    const { color, size } = this.props;
 
-    return (
-      <Text style={{color, fontSize: size}}>
-        {count}
-      </Text>
-    )
+    return <Text style={{ color, fontSize: size }}>{count}</Text>;
   }
 }
 
@@ -407,7 +401,7 @@ export default class CounterApp extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Counter color={'red'} size={30} />
+        <Counter color={"red"} size={30} />
       </View>
     );
   }
@@ -418,7 +412,7 @@ export default class CounterApp extends Component {
 
 ---
 
-### Exemple d'application
+## Exemple d'application
 
 <https://github.com/ensc-mobi/RandomBeer>
 ![Random Beer app](images/random_beer.png)

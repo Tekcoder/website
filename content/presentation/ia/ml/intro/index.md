@@ -6,15 +6,15 @@ weight: 2
 course: ["ia"]
 ---
 
-### Sommaire
+## Sommaire
 
-* ...
-* Régression linéaire
-* Régression logistique
+- ...
+- Régression linéaire
+- Régression logistique
 
 ---
 
-### Un nouveau paradigme
+## Un nouveau paradigme
 
 {{% fragment %}}![Programming paradigm](images/programming_paradigm.png){{% /fragment %}}
 
@@ -32,7 +32,7 @@ course: ["ia"]
 
 {{% section %}}
 
-### Apprentissage supervisé
+## Apprentissage supervisé
 
 Les résultats à obtenir sont fournis avec les données d'entraînement.
 
@@ -40,7 +40,7 @@ Ces données sont dites **structurées** (étiquetées).
 
 ---
 
-### Régression
+## Régression
 
 Le système prédit des valeurs **continues**.
 
@@ -48,7 +48,7 @@ Le système prédit des valeurs **continues**.
 
 ---
 
-### Classification
+## Classification
 
 Le système prédit des valeurs discrètes : il **catégorise** les entrées.
 
@@ -58,7 +58,7 @@ Le système prédit des valeurs discrètes : il **catégorise** les entrées.
 
 ---
 
-### Apprentissage non supervisé
+## Apprentissage non supervisé
 
 Le système doit découvrir par lui-même une éventuelle structure dans les données (fournies sans les résultats à obtenir).
 
@@ -66,7 +66,7 @@ Le système doit découvrir par lui-même une éventuelle structure dans les don
 
 ---
 
-### Apprentissage par renforcement
+## Apprentissage par renforcement
 
 Les décisions du système lui procurent une **récompense** qu'il cherche à maximiser. {{< youtube id="TmPfTpjtdgg" class="youtube-player" >}}
 

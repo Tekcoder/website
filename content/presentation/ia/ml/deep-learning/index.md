@@ -10,11 +10,11 @@ course: ["ia"]
 
 ---
 
-### Sommaire
+## Sommaire
 
-* Les réseaux à convolution
-* ...
+- Les réseaux à convolution
+- ...
 
 ---
 
-### Les réseaux à convolution
+## Les réseaux à convolution

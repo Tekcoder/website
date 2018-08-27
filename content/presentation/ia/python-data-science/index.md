@@ -6,44 +6,44 @@ weight: 2
 course: ["ia"]
 ---
 
-### Sommaire
+## Sommaire
 
-* Introduction à Python
-* Partage de code avec Jupyter Notebook
-* Calcul mathématique avec NumPy
-* Analyse de données avec Pandas
-* Création de graphiques avec Matplotlib et Seaborn
-* Installation simplifiée avec Anaconda
-
----
-
-### Introduction à Python
+- Introduction à Python
+- Partage de code avec Jupyter Notebook
+- Calcul mathématique avec NumPy
+- Analyse de données avec Pandas
+- Création de graphiques avec Matplotlib et Seaborn
+- Installation simplifiée avec Anaconda
 
 ---
 
-### Le langage Python
+## Introduction à Python
+
+---
+
+## Le langage Python
 
 Langage de programmation sous licence libre créé en 1989 par [Guido van Rossum](https://fr.wikipedia.org/wiki/Guido_van_Rossum).
 
 ![Python logo](images/Python_logo.png)
 
-* Multi-paradigmes (procédural, fonctionnel, objet)
-* Typage dynamique
-* Gestion automatique de la mémoire
+- Multi-paradigmes (procédural, fonctionnel, objet)
+- Typage dynamique
+- Gestion automatique de la mémoire
 
 ---
 
-### La syntaxe de Python
+## La syntaxe de Python
 
 TODO
 
 ---
 
-### Python, le standard pour la Data Science
+## Python, le standard pour la Data Science
 
-* Qualités du langage (logique, simplicité, souplesse)
-* Implication de la communauté scientifique et universitaire
-* Existence de nombreuses bibliothèques dédiées
+- Qualités du langage (logique, simplicité, souplesse)
+- Implication de la communauté scientifique et universitaire
+- Existence de nombreuses bibliothèques dédiées
 
 ---
 

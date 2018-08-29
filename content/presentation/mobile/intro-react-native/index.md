@@ -1,5 +1,5 @@
 ---
-title: "Introduction au développement mobile avec React Native"
+title: "Introduction à React Native"
 date: 2018-05-23T23:34:24+02:00
 draft: false
 repo: https://github.com/ensc-mobi/RandomBeer

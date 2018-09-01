@@ -9,7 +9,6 @@ draft: true
 - Unity en bref
 - L'éditeur Unity
 - Concepts-clés
-- Scripting
 
 ---
 
@@ -63,7 +62,7 @@ draft: true
 ## Asset
 
 - Ressource utilisable dans Unity.
-- Nombreux types possibles : image, modèle 3D, fichier audio, etc.
+- Nombreux types possibles : image, modèle 3D, texture, fichier audio, script, etc.
 
 ![Import d'un Asset](images/AssetWorkflowImportingFiles.png)
 
@@ -89,7 +88,7 @@ draft: true
 
 ## Scène
 
-- Correspond à un niveau du jeu.
+- Correspond à une partie du jeu (un niveau).
 - Sauvegardées parmi les Assets.
 
 ![Nouvelle scène](images/NewEmptyScene.png)
@@ -110,7 +109,7 @@ draft: true
 ### Hiérarchie des GameObjects
 
 - Création de hiérarchies parent/enfants à plusieurs niveaux en regroupant des GameObjects.
-- Permet de définir des **propriétés communes** ou de refléter des **relations de composition** entre objets.
+- Permet de refléter des **relations de composition** entre objets.
 
 ![Hiérarchie des GO](images/HierarchyParenting1.png)
 
@@ -130,7 +129,7 @@ Ajoute un comportement à un GameObject.
 
 ## Le composant Transform
 
-Définit la position, l'orientation et l'échelle d'un GameObject.
+Définit la position, la rotation et l'échelle d'un GameObject.
 
 ![Transform 1](images/TransformExample2.png)
 
@@ -138,7 +137,7 @@ Définit la position, l'orientation et l'échelle d'un GameObject.
 
 ## Transform et hiérarchie
 
-- Position, orientation et échelle d'un GameObject sont relatives à son parent dans la hiérarchie.
+- Position, rotation et échelle d'un GameObject sont relatives à son parent dans la hiérarchie.
 - Les valeurs de Transform sont relatives à celles du GameObject parent (**coordonnées locales**) ou absolues en l'absence de parent (**coordonnées globales**).
 
 {{% /section %}}
@@ -212,28 +211,33 @@ Type de GameObject qui calcule la vue de la scène affichée au joueur.
 
 ---
 
-## Scripting
-
----
+{{% section %}}
 
 ## Script
 
-- Permet de coder le comportement d'un GameObject en langage C# ou UnityScript.
-- Fait partie des composants du GameObject.
+- Type d'Asset permettant de coder le comportement d'un GameObject en langage C# ou UnityScript.
+- Doit faire partie des composants du GameObject.
 - Peut accéder aux propriétés du GameObject définies par ses autres composants.
 
 ---
 
+## Anatomie d'un script
+
 ```csharp
-using UnityEngine;
-using System.Collections;
+// ... (directives using)
 
+// MonoBehaviour : superclasse de tous les scripts Unity
 public class MainPlayer : MonoBehaviour {
+    // Appelée lorsque le script est activé
+    void Start() { ... }
 
-    // Use this for initialization
-    void Start () { ... }
+    // Appelée à chaque nouvelle image (frame)
+    // L'intervalle de temps entre deux appels peut varier
+    void Update() { ... }
 
-    // Update is called once per frame
-    void Update () { ... }
+    // Appelée à intervalles réguliers (0.02s par défaut)
+    void FixedUpdate() { ... }
 }
 ```
+
+{{% /section %}}

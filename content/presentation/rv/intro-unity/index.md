@@ -48,8 +48,9 @@ draft: true
 
 ---
 
-## Projet
+## Project
 
+- Rassemble tous les éléments constituant le jeu.
 - Peut être de type 2D ou 3D.
 - Correspond physiquement à un répertoire stocké localement ou dans le *cloud*.
 
@@ -61,7 +62,7 @@ draft: true
 
 ## Asset
 
-- Ressource utilisable dans Unity.
+- Ressource utilisable dans un projet.
 - Nombreux types possibles : image, modèle 3D, texture, fichier audio, script, etc.
 
 ![Import d'un Asset](images/AssetWorkflowImportingFiles.png)
@@ -86,7 +87,7 @@ draft: true
 
 ---
 
-## Scène
+## Scene
 
 - Correspond à une partie du jeu (un niveau).
 - Sauvegardées parmi les Assets.
@@ -109,7 +110,7 @@ draft: true
 ### Hiérarchie des GameObjects
 
 - Création de hiérarchies parent/enfants à plusieurs niveaux en regroupant des GameObjects.
-- Permet de refléter des **relations de composition** entre objets.
+- Permet de refléter des relations de **dépendance** ou de **composition** entre objets.
 
 ![Hiérarchie des GO](images/HierarchyParenting1.png)
 
@@ -168,20 +169,71 @@ Composant assurant le rendu d'un Mesh à la position définie par le composant T
 
 Composant permettant à un GameObject de réagir selon les lois de la physique :
 
-- Prise en compte de la gravité.
+- Gestion de la masse, de la gravité, etc.
 - Application de forces.
-- Gestion des collisions.
+- Réaction aux collisions.
 
 ![RigidBody](images/Inspector-Rigidbody.png)
 
 ---
 
+{{% section %}}
+
 ## Collider
 
-Composant définissant la forme d'un GameObject pour la gestion des collisions.
+Composant définissant la forme d'un GameObject pour la gestion des collisions :
 
 - **Primitive Collider** : formes géométriques de base (cube, sphère, cylindre, etc).
-- **Mesh Collider** : forme spécifique définie par un Mesh.
+- **Mesh Collider** : forme spécifique définie par un Mesh. Plus coûteux en temps de calcul.
+
+Par défaut, des GameObjects possédant un Collider ne peuvent pas se chevaucher.
+
+---
+
+## RigidBody Collider
+
+GameObject possédant un Collider et un RigidBody.
+
+- Soumis aux lois de la physique.
+- Déclenche des collisions avec les autres (non-Trigger) Colliders.
+- Doit être déplacé en lui appliquand des forces.
+
+---
+
+## Static Collider
+
+GameObject possédant un Collider mais pas de RigidBody.
+
+- Déclenche des collisions avec les RigidBody Colliders, mais ne bouge pas.
+- Ne doit pas être déplacé.
+- Destiné aux éléments immobiles de la scène (murs, obstacles, etc).
+
+---
+
+## Kinematic RigidBody Collider
+
+GameObject possédant un Collider et un RigidBody défini comme Kinematic.
+
+- N'est pas soumis aux lois de la physique.
+- Déclenche des collisions avec les RigidBody Colliders, mais ne bouge pas.
+- Peut être déplacé en modifiant son Transform.
+- Destiné aux éléments animés du décor (portes, objets à récupérer, etc).
+
+---
+
+## Trigger Collider
+
+GameObject dont le Collider est défini comme Trigger.
+
+![IsTrigger](images/is-trigger-check-box.jpg)
+
+- Autorise le chevauchement sans déclencher de collision.
+- Permet de définir une **zone** et de réagir lorsque des RigidBody Colliders y pénètrent.
+
+---
+[![Collision Matrix](images/UnityCollisionMatrix.png)](https://docs.unity3d.com/Manual/CollidersOverview.html)
+
+{{% /section %}}
 
 ---
 
@@ -228,7 +280,7 @@ Type de GameObject qui calcule la vue de la scène affichée au joueur.
 
 // MonoBehaviour : superclasse de tous les scripts Unity
 public class MainPlayer : MonoBehaviour {
-    // Appelée lorsque le script est activé
+    // Appelée juste avant le rendu de la première image
     void Start() { ... }
 
     // Appelée à chaque nouvelle image (frame)

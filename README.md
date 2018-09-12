@@ -1,11 +1,13 @@
 # website
 
-My website, built with [Hugo](https://gohugo.io). Theme adapted from [Minimal](https://themes.gohugo.io/minimal/).
+Source code for my website.
 
-Published at [www.bpesquet.fr](https://www.bpesquet.fr) (French) and [www.bpesquet.com](https://www.bpesquet.com) (English)
+Processed by [Hugo](https://gohugo.io) and published in [French](https://github.com/bpesquet/bpesquet.fr) and [English](https://github.com/bpesquet/bpesquet.com).
+
+Theme adapted from [Minimal](https://themes.gohugo.io/minimal/). Thanks!
 
 ## HOWTO: export a Reveal.js presentation to PDF
 
 Print through your browser or use the [decktape](https://github.com/astefanutti/decktape) utility:
 
-> decktape \<url\> \<output filename\> -s 1280x1024
+> decktape \<url\> \<output filename\> -s 1280x905

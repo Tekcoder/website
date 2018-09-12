@@ -1,8 +1,8 @@
-DefaultContentLanguage = "fr"
 title = "Baptiste Pesquet"
 disqusShortname = "bpesquet"
 enableGitInfo = true
 googleAnalytics = "UA-39897312-4"
+staticDir = ["static/common"]
 
 [params]
     profilePic = "images/profile.png"
@@ -16,57 +16,66 @@ googleAnalytics = "UA-39897312-4"
     highlightLanguages = ["javascript", "bash", "csharp", "python", "php"]
 
 [languages]
-  [languages.en]
-    languageName = "English"
-    languageCode ="en-US"
-    baseURL = "https://www.bpesquet.com"
-    weight = 2
   [languages.fr]
     languageName = "French"
     languageCode= "fr"
     baseURL = "https://www.bpesquet.fr"
-    staticDir1 = ["static_fr"]
+    contentDir = "content/fr"
+    staticDir1 = "static/fr"
     weight = 1
 
-[languages.en.params]
-    description = "Engineer and computer science teacher"
+  [languages.en]
+    languageName = "English"
+    languageCode ="en-US"
+    baseURL = "https://www.bpesquet.com"
+    contentDir = "content/en"
+    staticDir2 = "static/en"
+    weight = 2
 
 [languages.fr.params]
     description = "Ingénieur et enseignant en informatique"
 
-[[menu.main]]
+[languages.en.params]
+    description = "Engineer and computer science teacher"
+
+[[languages.fr.menu.main]]
     url = "/"
     name = "Accueil"
     weight = 1
 
-[[menu.main]]
+[[languages.fr.menu.main]]
     url = "cv.pdf"
     name = "CV"
     weight = 1
 
-[[menu.main]]
+[[languages.fr.menu.main]]
+    url = "cv.pdf"
+    name = "CV"
+    weight = 1
+
+[[languages.fr.menu.main]]
     url = "/article/"
     name = "Blog"
     weight = 2
 
-[[menu.main]]
+[[languages.fr.menu.main]]
     identifier = "teaching"
     name = "Enseignement"
     weight = 3
 
-[[menu.main]]
+[[languages.fr.menu.main]]
     url = "/course/"
     name = "Modules de cours"
     parent = "teaching"
     weight = 1
 
-[[menu.main]]
-    url = "/presentation/"
-    name = "Présentations"
+[[languages.fr.menu.main]]
+    url = "/slides/"
+    name = "Diaporamas"
     parent = "teaching"
     weight = 2
 
-[[menu.main]]
+[[languages.fr.menu.main]]
     url = "/publication/"
     name = "Publications"
     parent = "teaching"
@@ -77,36 +86,41 @@ googleAnalytics = "UA-39897312-4"
     name   = "Home"
     weight = 1
 
+[[languages.en.menu.main]]
+    url = "/publication/"
+    name = "Publications"
+    weight = 3
+
 # Social icons to be shown on the right-hand side of the navigation bar
 # The "name" field should match the name of the icon to be used
 # The list of available icons can be found at http://fontawesome.io/icons/
 
-[[menu.icon]]
+[[languages.fr.menu.icon]]
     url = "mailto:bpesquet [at] gmail [dot] com"
     name = "envelope-o"
     weight = 1
 
-[[menu.icon]]
+[[languages.fr.menu.icon]]
     url = "https://github.com/bpesquet/"
     name = "github"
     weight = 2
 
-[[menu.icon]]
+[[languages.fr.menu.icon]]
     url = "https://twitter.com/bpesquet/"
     name = "twitter"
     weight = 3
 
-[[menu.icon]]
+[[languages.fr.menu.icon]]
     url = "https://www.medium.com/@bpesquet/"
     name = "medium"
     weight = 4
 
-[[menu.icon]]
+[[languages.fr.menu.icon]]
     url = "http://www.pearltrees.com/bpesquet"
     name = "bookmark"
     weight = 5
 
-[[menu.icon]]
+[[languages.fr.menu.icon]]
     url = "https://www.linkedin.com/in/bpesquet/"
     name = "linkedin"
     weight = 6

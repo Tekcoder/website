@@ -1,0 +1,10 @@
+.reveal section img {
+    border: 0px;
+    box-shadow: unset;
+}
+
+/* Youtube videos */
+.reveal iframe {
+    width: 640px;
+    height: 385px;
+}

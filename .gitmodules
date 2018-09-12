@@ -1,6 +1,6 @@
 [submodule "static/common/reveal.js"]
 	path = static/common/reveal.js
-	url = https://github.com/hakimel/reveal.js.git
+	url = https://github.com/hakimel/reveal.js
 [submodule "public/fr"]
 	path = public/fr
 	url = https://github.com/bpesquet/bpesquet.fr.git

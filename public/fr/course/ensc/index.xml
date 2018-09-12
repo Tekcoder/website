@@ -6,7 +6,7 @@
     <description>Recent content in Ecole Nationale Supérieure de Cognitique on Baptiste Pesquet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Thu, 24 May 2018 16:07:40 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 12 Sep 2018 13:59:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.bpesquet.fr/course/ensc/index.xml" rel="self" type="application/rss+xml" />
     
@@ -52,10 +52,10 @@
     
     <item>
       <title>Développement web</title>
-      <link>https://www.bpesquet.fr/course/ensc/dev-web/</link>
+      <link>https://www.bpesquet.fr/course/ensc/web/</link>
       <pubDate>Tue, 22 May 2018 22:54:22 +0200</pubDate>
       
-      <guid>https://www.bpesquet.fr/course/ensc/dev-web/</guid>
+      <guid>https://www.bpesquet.fr/course/ensc/web/</guid>
       <description> Compléments  Demystifying CORS  </description>
     </item>
     

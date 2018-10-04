@@ -24,7 +24,9 @@ draft: false
 
 ---
 
-{{< youtube id="ctNF6QlLBWo" class="youtube-player" >}}
+## Made with Unity
+
+{{< youtube ctNF6QlLBWo >}}
 
 ---
 

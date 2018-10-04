@@ -72,7 +72,7 @@ Le système doit découvrir par lui-même une éventuelle structure dans les don
 
 ## Apprentissage par renforcement
 
-Les décisions du système lui procurent une **récompense** qu'il cherche à maximiser. {{< youtube id="TmPfTpjtdgg" class="youtube-player" >}}
+Les décisions du système lui procurent une **récompense** qu'il cherche à maximiser. {{< youtube TmPfTpjtdgg >}}
 
 ---
 

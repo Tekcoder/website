@@ -2,9 +2,9 @@ title = "Baptiste Pesquet"
 # disqusShortname = "bpesquet"
 enableGitInfo = true
 googleAnalytics = "UA-39897312-4"
-staticDir = ["static/common"]
 DefaultContentLanguage = "fr"
-
+baseURL = "https://www.bpesquet.fr"
+    
 [params]
     profilePic = "images/profile.png"
     author = "Baptiste Pesquet"
@@ -24,7 +24,7 @@ DefaultContentLanguage = "fr"
     weight = 1
 
 [[menu.main]]
-    url = "cv.pdf"
+    url = "CV_BaptistePesquet.pdf"
     name = "CV"
     weight = 2
 

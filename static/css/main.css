@@ -13,7 +13,6 @@ main {
     margin: auto;
     padding: 25px;
     flex: 1 0 auto;
-    max-width: 750px;
 }
 
 /*footer*/
@@ -23,6 +22,10 @@ main {
 }
 
 /*home page*/
+
+.intro {
+    transform: translateY(10vh);
+}
 
 .intro > h1 {
     color: #212121;

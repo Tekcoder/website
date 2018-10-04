@@ -1,3 +1,0 @@
----
-title: "Modules de cours"
----

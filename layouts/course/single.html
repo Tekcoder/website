@@ -13,7 +13,7 @@
     <div class="text-justify">
 
     <!-- related presentations -->
-    {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "presentation" }} 
+    {{ $related := where (.Site.RegularPages.RelatedIndices . "course" ) "Type" "slides" }} 
     {{ with $related }}
         <h2>{{ i18n "relatedPresentations" }}</h2>
         <ul>

@@ -4,6 +4,3 @@
 [submodule "public/fr"]
 	path = public/fr
 	url = https://github.com/bpesquet/bpesquet.fr
-[submodule "public/en"]
-	path = public/en
-	url = https://github.com/bpesquet/bpesquet.com

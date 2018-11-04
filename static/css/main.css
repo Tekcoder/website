@@ -45,15 +45,15 @@ main {
 
 /*apply accent colour to links*/
 
-a:link, a:visited {
+a:not(#calltoaction):link, a:not(#calltoaction):visited {
     color: var(--accent);
 }
 
-a.icon:hover {
+a:not(#calltoaction).icon:hover {
     text-decoration: none;
 }
 
-a:hover {
+a:not(#calltoaction):hover {
     color: var(--accent) !important;
 }
 
